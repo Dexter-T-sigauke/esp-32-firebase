@@ -84,3 +84,13 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 Feel free to modify the code and adapt it to your needs. Happy coding!
+
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, onValue } from "firebase/database";
+import "firebase/database";
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getDatabase();
+
+export { db, ref, onValue };
